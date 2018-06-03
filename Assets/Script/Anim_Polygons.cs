@@ -5,6 +5,7 @@ using UnityEngine;
 public class Anim_Polygons : MonoBehaviour, IAnimationObject {
 
 	public List<Anim_Polygon> polygons;
+	private bool isPlay = true;
 
 	public void AnimInit() {
 		foreach(IAnimationObject polygon in polygons) {
@@ -16,6 +17,10 @@ public class Anim_Polygons : MonoBehaviour, IAnimationObject {
 		foreach(IAnimationObject polygon in polygons) {
 			polygon.AnimUpdate();
 		}
+	}
+
+	public void AnimStop() {
+
 	}
 
 	void Awake () {

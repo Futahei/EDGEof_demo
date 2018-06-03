@@ -27,13 +27,13 @@ public class Anim_Polygon : MonoBehaviour, IAnimationObject {
 		}
 
 		// (リ)スポーン
-		transform.position = direction;
+		transform.localPosition = direction;
 	}
 
 	public void AnimUpdate() {
 		// 回転と位置の変化
 		transform.Rotate(angles);
-		transform.position += direction * speed;
+		transform.localPosition += direction * speed;
 
 		// 範囲内か確認
 		if(IsInArea(transform.position, transform.parent.position)) {

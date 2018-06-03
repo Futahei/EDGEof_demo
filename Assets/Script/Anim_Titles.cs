@@ -18,7 +18,7 @@ public class Anim_Titles : MonoBehaviour, IAnimationObject {
 		foreach(IAnimationObject title in titles) {
 			title.AnimUpdate();
 		}
-    if(isMove&&transform.localPosition.z>-2f) {
+    if(isMove&&transform.localPosition.z>-2.5f) {
       transform.Translate(new Vector3(0,-0.01f,0));
     }
 	}
