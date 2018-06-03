@@ -50,12 +50,4 @@ public class Anim_Polygon : MonoBehaviour, IAnimationObject {
 	private bool IsInArea(Vector3 position, Vector3 origin) {
 		return (position - origin).magnitude > 5.0f;
 	}
-
-	void Start () {
-		AnimInit();
-	}
-	
-	void Update () {
-		AnimUpdate();
-	}
 }
